@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdk 31
     buildToolsVersion "30.0.3"
 
     buildFeatures {
@@ -33,13 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    namespace 'defdeveu.lab.android.biometricsadvanced'
 }
 
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 }
